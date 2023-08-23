@@ -69,7 +69,7 @@
 /* 전체 폰트 선언 */
 html{ font-size: 16px; }
 *{ box-sizing: border-box; font-family: 'SF Pro Text', 'Malgun Gothic', '맑은 고딕', '돋움', Dotum, 'Arial', 'Helvetica', Sans-serif; text-decoration: none; }
-body{ font-family: 'SF Pro Text', 'Malgun Gothic', '맑은 고딕', '돋움', Dotum, 'Arial', 'Helvetica', Sans-serif; z-index: 0; }
+body{ font-family: 'SF Pro Text', 'Malgun Gothic', '맑은 고딕', '돋움', Dotum, 'Arial', 'Helvetica', Sans-serif; z-index: 0; overflow-x: hidden; }
 
 /* 공통 디자인 선언 */
 .ellipse{ display: flex; gap: 10px; flex-direction: row; }
@@ -493,8 +493,6 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
-    *{ box-sizing: border-box; }
-
     /* 공통 디자인 선언 */
     .ellipse{  }
     .ellipse .el-1st, .ellipse .el-2nd, .ellipse .el-3rd{  }
@@ -629,26 +627,26 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
     main .contact{ width: 100vw; height: calc(100vh - 50px); box-sizing: border-box; }
     main .contact .title{ padding-top: 60px; }
     main .contact .contents{ display: block; position: relative; min-height: 800px; width: 100%; }
-    main .contact .contents .contact-talk{ width: 40%; max-width: 400px; min-width: 320px; max-height: 640px; right: calc(50% + 50px); box-shadow: 0 5px 9px 0 rgba(0,0,0,0.15); }
+    main .contact .contents .contact-talk{ width: 40%; max-width: 400px; min-width: 320px; max-height: 740px; right: calc(50% + 30px); box-shadow: 0 5px 9px 0 rgba(0,0,0,0.15); top: calc(50% - 340px); }
     main .contact .contents .contact-talk .status-bar{ height: 40px; border-radius: 20px 20px 0 0; }
     main .contact .contents .contact-talk .contact-main{ gap: 50px; }
-    main .contact .contents .contact-talk .contact-main .title-mid{ font-size: 2.75rem; padding: 0 50px; }
+    main .contact .contents .contact-talk .contact-main .title-mid{ font-size: 2.5rem; padding: 0 50px; }
     main .contact .contents .contact-talk .contact-main .talk-info{ gap: 25px; }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-title{  }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-style{ gap: 20px; }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-style .style-list{ gap: 10px; }
-    main .contact .contents .contact-talk .contact-main .talk-info .talk-style .style-list .style-item{ font-size: 0.625rem; word-spacing: -1px; }
+    main .contact .contents .contact-talk .contact-main .talk-info .talk-style .style-list .style-item{ font-size: 0.625rem; line-height: normal; }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-line{  }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-keyword{ gap: 20px; }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-keyword .keyword-list{  }
-    main .contact .contents .contact-talk .contact-main .talk-info .talk-keyword .keyword-list .keyword-item{  }
+    main .contact .contents .contact-talk .contact-main .talk-info .talk-keyword .keyword-list .keyword-item{ font-size: 0.625rem; }
     main .contact .contents .contact-talk .contact-main .talk-info .talk-keyword .keyword-list .keyword-item:hover{  }
-    main .contact .contents .contact-inTouch{ height: 90%; max-height: 920px; width: 40%; min-width: 500px; left: calc(50% - 120px); box-shadow: 0 5px 9px 0 rgba(0,0,0,0.15); }
+    main .contact .contents .contact-inTouch{ height: 90%; max-height: 920px; width: 40%; min-width: 460px; left: calc(50% - 80px); box-shadow: 0 5px 9px 0 rgba(0,0,0,0.15); }
     main .contact .contents .contact-inTouch .status-bar{  }
     main .contact .contents .contact-inTouch .contact-main{ gap: 50px; }
-    main .contact .contents .contact-inTouch .contact-main .title-mid{ font-size: 2.75rem; padding: 0 20%; }
-    main .contact .contents .contact-inTouch .contact-main .email-form{ width: 70%; }
-    main .contact .contents .contact-inTouch .contact-main .email-form .form-area{ gap: 20px; }
+    main .contact .contents .contact-inTouch .contact-main .title-mid{ font-size: 2.5rem; padding: 0 20%; }
+    main .contact .contents .contact-inTouch .contact-main .email-form{  }
+    main .contact .contents .contact-inTouch .contact-main .email-form .form-area{ gap: 30px; }
     main .contact .contents .contact-inTouch .contact-main .email-form .form-area .form-list{ width: 92%; display: flex; flex-direction: column; gap: 20px; }
     main .contact .contents .contact-inTouch .contact-main .email-form .form-area .form-list .form-item{  }
     main .contact .contents .contact-inTouch .contact-main .email-form .form-area .form-list .form-item input,
