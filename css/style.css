@@ -771,7 +771,7 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
     main .home .main-bus img{ width: 657px; height: 558px;}
     /* main .home .main-bus{ position: absolute; right: -300px; top: -230px; animation: slideBus 16s cubic-bezier(0.4, 0, 0.2, 1) infinite; animation-delay: 1s; } */
     main .home .main-title{ margin: 0 auto; right: -37%; bottom: calc(0% - 100vh + 42%); transition: all 0.3s; transform: rotate(-32deg); opacity: 0; z-index: 0; animation: titleOpacity 16s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
-    main .home .main-title p{ font-size: 2rem; }
+    main .home .main-title p{ font-size: 1.875rem; }
 
 
     main .about{ width: 100vw; height: 100vh; box-sizing: border-box; }
@@ -865,13 +865,17 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
     main .portfolio-mob .contents .tab-contents .dev-slick .dev-tab .dev-display-area .display .display-list .slick-track li{ width: 280px !important; height: 400px; }
     
     main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box{ position: absolute; width: 100%; height: 85px; display: flex; flex-direction: column; gap: 10px; background-color: rgba(255, 255, 255, 0.8); bottom: 0; transition: all 0.3s; padding: 20px; }
-    main .portfolio-mob .contents .tab-contents .dev-slick .dev-tab .dev-display-area .display .display-list .display-item .text-box{ position: absolute; width: 100%; height: 85px; display: flex; flex-direction: column; gap: 10px; background-color: rgba(255, 255, 255, 0.8); bottom: 0; transition: all 0.3s; padding: 20px; }
+    main .portfolio-mob .contents .tab-contents .dev-slick .dev-tab .dev-display-area .display .display-list .display-item .text-box{ position: absolute; width: 100%; height: 100px; display: flex; flex-direction: column; gap: 10px; background-color: rgba(255, 255, 255, 0.8); bottom: 0; transition: all 0.3s; padding: 20px; }
     main .portfolio-mob .contents .tab-contents .display .display-list .slick-active .text-box{ height: 100px; }
     main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-title{ font-size: 14px; font-weight: 700; }
     main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail{ font-size: 10px; width: 100%; }
-    main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list{  }
-    main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list .text-box-item{  }
-    main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list .text-box-item .item{  }
+    main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list{ width: 100%; }
+    /* main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list tbody{ width: 100%; display: flex; flex-direction: column; } */
+    main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list .text-box-item{ line-height: 1.5; }
+    main .portfolio-mob .contents .tab-contents .display .display-list .display-item .text-box .text-box-detail .text-box-list .text-box-item .item{ height: auto; }
+    main .portfolio-mob .contents .tab-contents .dev-slick .dev-tab .dev-display-area .display .display-list .display-item .text-box .text-box-detail .text-box-list{ width: 100%; }
+    main .portfolio-mob .contents .tab-contents .dev-slick .dev-tab .dev-display-area .display .display-list .display-item .text-box .text-box-detail .text-box-list .text-box-item .item:first-of-type{ width: 40%; }
+    main .portfolio-mob .contents .tab-contents .dev-slick .dev-tab .dev-display-area .display .display-list .display-item .text-box .text-box-detail .text-box-list .text-box-item .item:last-of-type{ width: 60%; }
     main .portfolio-mob .contents .tab-contents .display .display-list .slick-active .text-box .text-box-title{ font-size: 16px; }
     main .portfolio-mob .contents .tab-contents .display .display-list .slick-active .text-box .text-box-detail{ font-size: 12px; }
 
