@@ -1411,7 +1411,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal design-modal1">
+                            <div class="modal design-modal2">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1428,7 +1428,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal2">
+                            <div class="modal design-modal3">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1443,7 +1443,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal3">
+                            <div class="modal design-modal4">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1459,7 +1459,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal4">
+                            <div class="modal design-modal5">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1473,7 +1473,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal5">
+                            <div class="modal design-modal6">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1487,7 +1487,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal6">
+                            <div class="modal design-modal7">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1501,7 +1501,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal7">
+                            <div class="modal design-modal8">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1514,7 +1514,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal8">
+                            <div class="modal design-modal9">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1528,7 +1528,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal design-modal9">
+                            <div class="modal design-modal10">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1638,7 +1638,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal dev-modal1">
+                            <div class="modal dev-modal2">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1654,7 +1654,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal dev-modal2">
+                            <div class="modal dev-modal3">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -1670,7 +1670,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal dev-modal3">
+                            <div class="modal dev-modal4">
                                 <div class="modal-window">
                                     <div class="modal-area">
                                         <ul class="modal-list">
@@ -2131,8 +2131,9 @@
             $('.portfolio-mob .design-slick .display-list li').click(function(event) {
                 if(!$('.modal').is(":visible")) {
                     // 클릭한 li 요소의 인덱스를 가져옴 (0부터 시작)
-                    var index = $(this).index() - 1;
-                    $('.portfolio-mob  .design-modal' + index).show();
+                    var slideIndex = $(this).closest('.design-slick').find('display-list li').index(this);
+                    var modalIndex = slideIndex;
+                    $('.portfolio-mob  .design-modal' + modalIndex).show();
                     // 모달창이 떴을 때 바디 스크롤 막음
                     $('body').css('overflow', 'hidden');
                     $('.modal').css('opacity', '1');
@@ -2143,8 +2144,9 @@
             $('.portfolio-mob .dev-slick .display-list li').click(function(event) {
                 if(!$('.modal').is(":visible")) {
                     // 클릭한 li 요소의 인덱스를 가져옴 (0부터 시작)
-                    var index = $(this).index() - 1;
-                    $('.portfolio-mob  .dev-modal' + index).show();
+                    var slideIndex = $(this).closest('.dev-slick').find('display-list li').index(this);
+                    var modalIndex = slideIndex;
+                    $('.portfolio-mob  .dev-modal' + slideIndex).show();
                     // 모달창이 떴을 때 바디 스크롤 막음
                     $('body').css('overflow', 'hidden');
                     $('.modal').css('opacity', '1');
