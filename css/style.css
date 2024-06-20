@@ -223,7 +223,8 @@ main .skills .contents .skills-list .tools-list{ width: 80%; margin: 0 auto; dis
 main .skills .contents .skills-list .tools-list .tools-item{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 main .skills .contents .skills-list .tools-list .tools-item:hover .item-img{ animation: shaking 0.5s; }
 main .skills .contents .skills-list .tools-list .tools-item .item-img{ width: 46px; height: 46px; display: flex; justify-content: center; align-items: center; }
-main .skills .contents .skills-list .tools-list .tools-item .item-img img{ width: 46px; max-width: 46px; max-height: 46px; }
+main .skills .contents .skills-list .tools-list .tools-item .item-img img{ max-width: 46px; max-height: 46px; }
+main .skills .contents .skills-list .tools-list .tools-item .item-img.Gulp img{ height: 46px; max-height: 46px; }
 main .skills .contents .skills-list .tools-list .tools-item .item-bar{ display: flex; flex-direction: column; width: 60%; gap: 8px; }
 main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-name{ font-size: 0.750rem; font-weight: 700; }
 main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per{ width: 100%; height: 10px; background-color: #BCDDFF; border-radius: 5px; overflow: hidden; }
@@ -236,6 +237,9 @@ main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .
 main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .bar-front.per60{ width: 60%; }
 main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .bar-front.per50{ width: 50%; }
 main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .bar-front.per40{ width: 40%; }
+main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .bar-front.per30{ width: 30%; }
+main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .bar-front.per20{ width: 20%; }
+main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per .bar-front.per10{ width: 10%; }
 main .skills .contents .skills-list .tools-list .tools-item .item-per{ font-size: 1rem; font-weight: 700; }
 main .skills .contents .skills-list .tools-list .tools-item:hover .item-bar .bar-per .bar-front.per100, main .skills .contents .skills-list .tools-list .tools-item:hover .item-bar .bar-per .bar-front.per90,
 main .skills .contents .skills-list .tools-list .tools-item:hover .item-bar .bar-per .bar-front.per80, main .skills .contents .skills-list .tools-list .tools-item:hover .item-bar .bar-per .bar-front.per70,
@@ -256,14 +260,14 @@ main .portfolio .contents .tab-nav .tab-list .tab-item.on a{ color: #333; }
 main .portfolio .contents .tab-nav .tab-list .bar{ width: 2px; background-color: #aaa; border-radius: 4px; }
 main .portfolio .contents .tab-contents{ width: 100%; height: 700px; padding-top: 80px; box-sizing: border-box; position: relative; }
 main .portfolio .contents .tab-contents .design-slick{ width: 80%; height: 100%; margin: 0 auto; }
-main .portfolio .contents .tab-contents .design-slick .ipad{ position: relative; }
+main .portfolio .contents .tab-contents .design-slick .ipad{ position: relative; cursor: pointer; }
 main .portfolio .contents .tab-contents .design-slick .ipad .mockup{ position: relative; }
 main .portfolio .contents .tab-contents .design-slick .ipad .mockup img{ position: absolute; bottom: calc(0%); right: calc(30% - 50px); }
 main .portfolio .contents .tab-contents .design-slick .ipad .display{ width: 746px; height: 559px; overflow: hidden; position: absolute; right: calc(30% - 26px); bottom: calc(0% + 27px); border-radius: 10px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); }
 main .portfolio .contents .tab-contents .design-slick .ipad .display .display-list{ display: flex; flex-direction: row; gap: 0; }
 main .portfolio .contents .tab-contents .design-slick .ipad .display .display-list .display-item{  }
 main .portfolio .contents .tab-contents .design-slick .ipad .display .display-list .display-item .item{ width: 746px; height: 559px; outline: none; }
-main .portfolio .contents .tab-contents .design-slick .iphone{ position: relative; }
+main .portfolio .contents .tab-contents .design-slick .iphone{ position: relative; cursor: pointer; }
 main .portfolio .contents .tab-contents .design-slick .iphone .mockup{ position: relative; }
 main .portfolio .contents .tab-contents .design-slick .iphone .mockup img{ position: absolute; bottom: calc(0%); left: 66%; }
 main .portfolio .contents .tab-contents .design-slick .iphone .mockup .box{ width: 100px; height: 25px; background-color: #505050; position: absolute; bottom: calc(0% + 465px); left: calc(66% + 65px); border-radius: 0px 0px 8px 8px; z-index: 1; }
@@ -272,14 +276,16 @@ main .portfolio .contents .tab-contents .design-slick .iphone .display .display-
 main .portfolio .contents .tab-contents .design-slick .iphone .display .display-list .display-item{  }
 main .portfolio .contents .tab-contents .design-slick .iphone .display .display-list .display-item .item{ width: 210px; height: 474px; }
 main .portfolio .contents .tab-contents .dev-slick{ width: 80%; height: 100%; margin: 0 auto; }
-main .portfolio .contents .tab-contents .dev-slick .imac{ position: relative; }
+main .portfolio .contents .tab-contents .dev-slick .imac{ position: relative; cursor: pointer; }
 main .portfolio .contents .tab-contents .dev-slick .imac .mockup{ position: relative; }
 main .portfolio .contents .tab-contents .dev-slick .imac .mockup img{ position: absolute; bottom: calc(0%); right: calc(50% - 280px); }
 main .portfolio .contents .tab-contents .dev-slick .imac .display{ width: 796px; height: 448px; overflow: hidden; position: absolute; bottom: calc(0% + 234px); right: calc(50% - 262px); border-radius: 4px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); }
 main .portfolio .contents .tab-contents .dev-slick .imac .display .display-list{ display: flex; flex-direction: row; gap: 0; }
 main .portfolio .contents .tab-contents .dev-slick .imac .display .display-list .display-item{  }
 main .portfolio .contents .tab-contents .dev-slick .imac .display .display-list .display-item .item{ width: 796px; top: 0; }
-main .portfolio .contents .tab-contents .dev-slick .ipad{ position: relative; }
+main .portfolio .contents .tab-contents .dev-slick .imac .display .display-list .display-item .hover-detail{ display: none; opacity: 0; width: 796px; height: 448px; background-color: rgba(0,0,0, 0.5); position: absolute; z-index: 5; top: 0; }
+main .portfolio .contents .tab-contents .dev-slick .imac .display .display-list .display-item:hover .hover-detail{ display: block; opacity: 1; animation: tabOpacity 0.5s ease-in; background-color: rgba(0,0,0, 0.5); }
+main .portfolio .contents .tab-contents .dev-slick .ipad{ position: relative; cursor: pointer; }
 main .portfolio .contents .tab-contents .dev-slick .ipad .mockup{ position: relative; }
 main .portfolio .contents .tab-contents .dev-slick .ipad .mockup img{ position: absolute; bottom: calc(0%); left: calc(50% + 70px); }
 main .portfolio .contents .tab-contents .dev-slick .ipad .display{ width: 438px; height: 332px; overflow: hidden; position: absolute; bottom: calc(0% + 16px); left: calc(50% + 86px); border-radius: 8px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); }
@@ -409,6 +415,7 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
     main .skills .contents .skills-list .tools-list .tools-item:hover .item-img{  }
     main .skills .contents .skills-list .tools-list .tools-item .item-img{ width: 32px; height: 32px; }
     main .skills .contents .skills-list .tools-list .tools-item .item-img img{ width: 32px; max-width: 32px; max-height: 32px; }
+    main .skills .contents .skills-list .tools-list .tools-item .item-img.Gulp img{ width: auto; height: 32px; max-height: 32px; }
     main .skills .contents .skills-list .tools-list .tools-item .item-bar{  }
     main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-name{  }
     main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per{ height: 8px; }
@@ -587,6 +594,7 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
     main .skills .contents .skills-list .tools-list .tools-item:hover .item-img{  }
     main .skills .contents .skills-list .tools-list .tools-item .item-img{ width: 30px; height: 30px; }
     main .skills .contents .skills-list .tools-list .tools-item .item-img img{ width: 30px; max-width: 30px; max-height: 30px; }
+    main .skills .contents .skills-list .tools-list .tools-item .item-img.Gulp img{ height: 30px; width: auto; max-height: 30px; }
     main .skills .contents .skills-list .tools-list .tools-item .item-bar{  }
     main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-name{ font-size: 0.625rem; }
     main .skills .contents .skills-list .tools-list .tools-item .item-bar .bar-per{ height: 8px; }
@@ -805,6 +813,7 @@ main .contact .contents .contact-inTouch .contact-main .email-form .loading-moda
     main .skills-mob .contents .skills-list .tools-list .tools-item:hover .item-img{ animation: shaking 0.5s; }
     main .skills-mob .contents .skills-list .tools-list .tools-item .item-img{ width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; }
     main .skills-mob .contents .skills-list .tools-list .tools-item .item-img img{ width: 32px; max-width: 32px; max-height: 46px; }
+    main .skills-mob .contents .skills-list .tools-list .tools-item .item-img.Gulp img{ width: auto; height: 32px; max-height: 46px; }
     main .skills-mob .contents .skills-list .tools-list .tools-item .item-bar{ display: flex; flex-direction: column; width: 60%; gap: 8px; }
     main .skills-mob .contents .skills-list .tools-list .tools-item .item-bar .bar-name{ font-size: 0.750rem; font-weight: 700; }
     main .skills-mob .contents .skills-list .tools-list .tools-item .item-bar .bar-per{ width: 100%; height: 10px; background-color: #BCDDFF; border-radius: 5px; overflow: hidden; }
